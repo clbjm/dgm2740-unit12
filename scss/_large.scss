@@ -1,0 +1,38 @@
+header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+div#myCards{
+        figure {
+            margin: 0;
+            width: 100%;
+            position: relative;
+            img {width: 5%;}
+            figcaption{
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(255,255,255,.5);
+                width: 100%;
+                padding: .5rem 2vw;
+                display: grid;
+grid-template-columns: 1fr;
+            }
+        }
+    }
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
