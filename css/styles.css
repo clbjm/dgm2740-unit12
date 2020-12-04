@@ -411,6 +411,7 @@ footer {
     display: block;
     width: 100%;
     text-transform: uppercase;
+    border-left: 1px solid;
   }
   nav ul {
     margin-left: 2%; }

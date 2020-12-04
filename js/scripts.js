@@ -1,5 +1,5 @@
 // what is the path to the JSON file?
-const apiURL = "../hoteldata.json"
+const apiURL = "hoteldata.json";
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
@@ -35,8 +35,10 @@ for (i = 0; i < myList.length; i++) {
     let theAddress2Tag = document.createElement("p");
     theAddress2Tag.textContent = myList[i].address[1];
     console.log(myList[i].address[1]);
-
     let theIconRightTag = document.createElement("i");
+    theIconRightTag.innerHTML = `<ion-icon name="logo-model-s"></ion-icon>`;
+    theAddress2Tag.innerHTML = myList[i].address;
+
     theIconRightTag.className = "icon ion-md-call";
 
   //create span elements
