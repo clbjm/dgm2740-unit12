@@ -22,11 +22,13 @@ for (i = 0; i < myList.length; i++) {
 
     let myPhoneTag = document.createElement("phone");
     myPhoneTag.textContent = myList[i].phone;
+    myPhoneTag.className ="hotelCard"
 
     let myFigureTag = document.createElement("figure");
+    myFigureTag.className = "hotelInfo";
 
     let theIconLeftTag = document.createElement("i");
-    theIconLeftTag.className = "icon ion-md-car";
+    theIconLeftTag.className = "icon ion-md-call";
 
     let theAddress1Tag = document.createElement("p");
     theAddress1Tag.textContent = myList[i].address[0];
@@ -39,7 +41,6 @@ for (i = 0; i < myList.length; i++) {
     theIconRightTag.innerHTML = `<ion-icon name="logo-model-s"></ion-icon>`;
     theAddress2Tag.innerHTML = myList[i].address;
 
-    theIconRightTag.className = "icon ion-md-call";
 
   //create span elements
   let theSpanLeftTag = document.createElement("span");
@@ -50,6 +51,8 @@ for (i = 0; i < myList.length; i++) {
   let theSpanRightTag = document.createElement("span");
   theSpanRightTag.appendChild(theIconRightTag);
   theSpanRightTag.appendChild(myPhoneTag);
+  myAddressTag.appendChild(theIconRightTag);
+  myPhoneTag.appendChild(theIconLeftTag);
 
     myFigureTag.appendChild(myImageTag);
     myFigureTag.appendChild(myCaptionTag);
